@@ -1,0 +1,55 @@
+html * {
+    box-sizing: border-box;
+}
+
+html body {
+    margin: 0;
+}
+
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    border-bottom: 1px solid gray;
+}
+
+.app-header .title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.app-header .menu {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.app-header .menu-item {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.app-header .menu-item.active {
+    font-weight: 600;
+}
+
+/* -------- */
+
+.app-garage {
+    padding: 16px;
+}
+
+.app-garage .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+}
+
+/* -------- */
+
+.app-car-card {
+    padding: 16px;
+    border: 1px solid gray;
+}
